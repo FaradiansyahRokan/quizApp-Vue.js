@@ -1,0 +1,26 @@
+:root {
+  --primary-blue: #2563eb;
+  --light-blue: #4f9efc;
+  --background-light: #f8f9fa;
+  --card-background: #ffffff;
+  --text-dark: #333333;
+  --text-medium: #666666;
+  --border-light: #e0e0e0;
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-light);
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
