@@ -67,34 +67,32 @@ function filterQuiz() {
   --shadow-medium: rgba(0, 0, 0, 0.1);
 }
 
-/* No global body/html styles here as they would be handled by a root App.vue or global CSS */
-/* We assume a basic reset is applied globally or by a framework */
-body { /* This will apply if this component is the root or imported without body styles */
+
+body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background-light);
   line-height: 1.6;
   color: var(--text-dark);
 }
 
-/* Main Layout */
 main {
   display: flex;
   justify-content: center;
   padding: 40px 20px;
   min-height: 100vh;
-  width: 100%; /* Ensure main takes full width */
+  width: 100%; 
 }
 
 .container {
   background-color: var(--card-background);
   width: 100%;
-  max-width: 960px; /* Increased max-width for a broader layout */
+  max-width: 960px; 
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 10px 30px var(--shadow-light);
   display: flex;
   flex-direction: column;
-  gap: 30px; /* Space between sections */
+  gap: 30px; 
 }
 
 /* App Header */
@@ -123,7 +121,7 @@ main {
 .search-bar {
   display: flex;
   gap: 10px;
-  max-width: 600px; /* Limit search bar width */
+  max-width: 600px; 
   margin: 0 auto;
   background-color: var(--card-background);
   border-radius: 12px;
@@ -136,7 +134,7 @@ main {
   border: none;
   padding: 12px 18px;
   font-size: 1rem;
-  border-radius: 8px; /* Slightly less rounded than container */
+  border-radius: 8px;
   outline: none;
   color: var(--text-dark);
 }
@@ -187,10 +185,10 @@ main {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Flexible grid columns */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
   gap: 20px;
   justify-content: center;
-  max-width: 900px; /* Align grid with container max-width */
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -247,7 +245,7 @@ main {
     width: 100%;
   }
   .category-grid {
-    grid-template-columns: 1fr; /* Stack cards on small screens */
+    grid-template-columns: 1fr; 
   }
 }
 
